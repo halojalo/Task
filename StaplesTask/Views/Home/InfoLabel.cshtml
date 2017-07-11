@@ -1,0 +1,9 @@
+﻿@model StaplesTask.Models.InfoLabelViewModel
+@{
+    ViewBag.Title = "Person's Details";
+}
+<div class="alert @Model.LabelClass" style="display:inline-block">@Model.InfoMessage</div>
+<br />
+<button class="btn btn-default" onclick="location.href='@Url.Action("Index", "Home" )'">
+    Back to form&nbsp;<span class='glyphicon glyphicon-arrow-left'></span>
+</button>
