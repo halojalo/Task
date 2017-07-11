@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?><Database Name="People" Class="SimpleDataContext" xmlns="http://schemas.microsoft.com/linqtosql/dbml/2007">
-  <Connection Mode="AppSettings" ConnectionString="Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=&quot;c:\users\jalo\documents\visual studio 2015\Projects\StaplesTask\StaplesTask\App_Data\People.mdf&quot;;Integrated Security=True" SettingsObjectName="PersonLibrary.Properties.Settings" SettingsPropertyName="PeopleConnectionString" Provider="System.Data.SqlClient" />
+  <Connection Mode="AppSettings" ConnectionString="Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=&quot;|DataDirectory|\People.mdf&quot;;Integrated Security=True" SettingsObjectName="PersonLibrary.Properties.Settings" SettingsPropertyName="PeopleConnectionString" Provider="System.Data.SqlClient" />
   <Table Name="dbo.Names" Member="Names">
     <Type Name="Name">
       <Column Name="Id" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />

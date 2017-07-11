@@ -27,7 +27,7 @@ namespace StaplesTask.Tests
             Person person = new Person() { Name = "Michał", Surname = "Jasek" };
 
             //act
-            bool saved = person.SaveFile("xml");
+            bool saved = person.SaveFile("txt");
 
             //assert
             Assert.IsFalse(saved);

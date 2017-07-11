@@ -26,9 +26,8 @@ namespace PersonLibrary.Properties {
         [global::System.Configuration.ApplicationScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.Configuration.SpecialSettingAttribute(global::System.Configuration.SpecialSetting.ConnectionString)]
-        [global::System.Configuration.DefaultSettingValueAttribute("Data Source=(LocalDB)\\MSSQLLocalDB;AttachDbFilename=\"c:\\users\\jalo\\documents\\visu" +
-            "al studio 2015\\Projects\\StaplesTask\\StaplesTask\\App_Data\\People.mdf\";Integrated " +
-            "Security=True")]
+        [global::System.Configuration.DefaultSettingValueAttribute("Data Source=(LocalDB)\\MSSQLLocalDB;AttachDbFilename=\"|DataDirectory|\\People.mdf\";" +
+            "Integrated Security=True")]
         public string PeopleConnectionString {
             get {
                 return ((string)(this["PeopleConnectionString"]));
