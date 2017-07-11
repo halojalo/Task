@@ -30,7 +30,7 @@ namespace PersonLibrary
         public bool SaveFile(string type)
         {
             bool saved = false;
-            string path = AppDomain.CurrentDomain.BaseDirectory + "logs\\all_logs." + type;
+            string path = AppDomain.CurrentDomain.BaseDirectory + "\\logs\\all_logs." + type;
             try
             {
                 switch (type)

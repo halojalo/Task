@@ -6,6 +6,7 @@ using System.Web.Mvc;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 using StaplesTask;
 using StaplesTask.Controllers;
+using StaplesTask.Models;
 
 namespace StaplesTask.Tests.Controllers
 {
@@ -13,7 +14,7 @@ namespace StaplesTask.Tests.Controllers
     public class HomeControllerTest
     {
         [TestMethod]
-        public void Index()
+        public void IndexTest()
         {
             // Arrange
             HomeController controller = new HomeController();
@@ -26,26 +27,14 @@ namespace StaplesTask.Tests.Controllers
         }
 
         [TestMethod]
-        public void About()
+        public void SaveDetailsTest()
         {
             // Arrange
             HomeController controller = new HomeController();
+            FormViewModel form = new FormViewModel() { Name = "Michał", Surname = "Jasek" };
 
             // Act
-            ViewResult result = controller.About() as ViewResult;
-
-            // Assert
-            Assert.AreEqual("Your application description page.", result.ViewBag.Message);
-        }
-
-        [TestMethod]
-        public void Contact()
-        {
-            // Arrange
-            HomeController controller = new HomeController();
-
-            // Act
-            ViewResult result = controller.Contact() as ViewResult;
+            ViewResult result = controller.SaveDetails(form) as ViewResult;
 
             // Assert
             Assert.IsNotNull(result);
